@@ -1,62 +1,50 @@
-html {
-    box-sizing: border-box;
-}
-*,
-*::before
-*::after {    
-   box-sizing: inherit;
+*{
+   box-sizing: border-box;
    margin: 0;
    padding: 0;
+   margin: 0 auto;
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;  
+   width: 419px;
+   height: 280px;
 }
 
-.wrapper {
-   font-family: 'Playfair Display', serif;
-   color:rgb(98,98,98);
-   margin-top:100px;
-   margin: 0 auto;
-   width: 900px;
-}
 .header {
-   display: inline-block;
    width: 900px;
    font-size: 14px;
    margin: 0 auto;
    padding: 130px;
+}
+.nav{
+    text-align: center;
+    vertical-align: middle;
 }
 .list-item:not(:last-child){
    margin-right: 100px;
 }
 .list-item {
    display: inline-block;
-   text-align: center;
-   vertical-align: middle;
    font-size: 14px;
    text-transform: uppercase;
 }
 .list-item a {
    text-decoration: none;
    color:rgb(98,98,98);
+   font-family: 'Playfair Display', serif;
 }
 .list-item a:hover,
 .list-item a:focus {
    color:rgb(68, 175, 211);
 }
+
 .container { 
-   display: inline-block;
-   box-sizing: border-box;
-   text-align:
-}
-
-.category {
-   font-family: 'Ubuntu', sans-serif;
-   font-size: 14px;
-   font-weight: 100px;
-   text-transform: uppercase;
-   color: lightgray;
-   margin: 24px ;
-   margin-left: auto;
-}
-
+   width:900px;
+   margin: 0 auto;
+   font-family: 'Playfair Display', serif;
+   color:rgb(98,98,98);
 }
 .article {
    margin: 0;
@@ -64,7 +52,7 @@ html {
   }
 .article {
    display: inline-block;
-   width: 420px;
+   width: 418px;
    margin-right: 60px;
    }
 .article:not(:nth-last-child(-n+2)){
@@ -78,10 +66,20 @@ html {
    margin-bottom: 24px;
 }
 
+.category {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 100px;
+    text-transform: uppercase;
+    color: rgb(202, 199, 199);
+    margin: 25px 0;
+    
+ }
 .container-text {
    font-size: 13px;
    line-height: 24px;
-   text-align:left;
+   text-align:justify;
+   color: rgb(98,98,98);
 }
 
 .footer {
@@ -101,5 +99,5 @@ html {
    height: 60px;
 }
 .button{
-   color: gray;
+   color: rgb(98,98,98);
 }
