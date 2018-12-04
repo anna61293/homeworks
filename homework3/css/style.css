@@ -2,7 +2,6 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   margin: 0 auto;
 }
 img {
    display: block;
@@ -11,7 +10,6 @@ img {
    width: 419px;
    height: 280px;
 }
-
 .header {
    width: 900px;
    font-size: 14px;
@@ -47,14 +45,10 @@ img {
    color:rgb(98,98,98);
 }
 .article {
-   margin: 0;
-   padding: 0;
-  }
-.article {
    display: inline-block;
    width: 418px;
    margin-right: 60px;
-   }
+}
 .article:not(:nth-last-child(-n+2)){
    margin-bottom: 130px;
 }
@@ -83,14 +77,13 @@ img {
 }
 
 .footer {
+   margin: 0 auto;
    width: 900px;
    box-sizing: border-box;
-   padding-top: 30px;
-   padding-bottom: 70px;
+   padding: 30px 0 70px 0;
    text-align: center;
 }
 .button {
-   /* display: inline-block; */
    border: solid 1px;
    background: white;
    font-size: 20px;

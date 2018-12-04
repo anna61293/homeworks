@@ -2,76 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  .header {
+    font-family: 'Roboto', sans-serif;
+ }
+ .header {
     padding: 35px 0;
-  }
-  .header-inner,
-  .section-inner{
-      width:1170px;
-      margin: 0 auto;
-      padding: 0 30px;
-  }
-  .section{
+ }
+ .header-inner,
+ .section-inner{
+    width:1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+ }
+ .section{
     padding: 35px 0 35px;
-  }
- 
-  .logo,
-  .list{
-      display:inline-block
-  }
-  .list{
-      float:right;
-      list-style:none;
-      font-family: 'Roboto', sans-serif;
-      margin-top: 8px;
-  }  
-  .clearfix::after{
+ }
+ .logo,
+ .list{
+    display:inline-block
+ }
+ .list{
+    float:right;
+    list-style:none;
+    margin-top: 8px;
+ }  
+ .clearfix::after{
     display:table;
     content: "";
     clear:both;
-}
-.list-item{
+ }
+ .list-item{
     display: inline-block;
     margin-right: 31px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-}
-.list-item:last-child {
+ }
+ .list-item:last-child {
     margin-right: 0;
-  }
-.list-item:hover,
-.list-item:focus{
+}
+ .list-item:hover,
+ .list-item:focus{
     color:rgb(33, 187, 161);
     cursor: pointer;
-}
-.list-link{
+ }
+ .list-link{
     display: block;
-}
-.logo-link{
+ }
+ .logo-link{
     display: block;
     text-decoration: none;
-}
-.logo-title{
+ }
+ .logo-title{
     font-size: 34px;
     color: rgb(100, 98, 98); 
     font-weight: 100; 
     line-height: 34px;
-}
+ }
  .logo-title::first-letter{
-     color:rgb(33, 187, 161);
-     font-weight: 700;
+    color:rgb(33, 187, 161);
+    font-weight: 700;
  }
                       /* Title section 1 */
  h2{
-     position: relative;
-     font-size: 40px;
-     color: rgb(100, 98, 98);
-     font-weight: 900;
-     text-align: center;
-     margin-bottom: 35px;
-     padding-bottom: 31px;
+    position: relative;
+    font-size: 40px;
+    color: rgb(100, 98, 98);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 31px;
  }   
  h2::after {
     content: '';
@@ -87,7 +86,7 @@
  .gallery {
     margin-bottom: 40px;
     font-size:0;
-  }
+ }
  .gallery-item{
     display: inline-block;
     vertical-align: top;
@@ -97,73 +96,68 @@
     margin-right: 20px;
     margin-bottom: 30px;
     cursor: pointer;
-}
-.gallery-item:nth-child(4n){
+ }
+ .gallery-item:nth-child(4n){
     margin-right: 0;
-}
-.gallery-item:nth-last-child(-n +4) {
+ }
+ .gallery-item:nth-last-child(-n +4) {
     margin-bottom: 0;
-}
-  img {
+ }
+ img {
     display: block;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 250px;
     object-fit: cover;
-  }
-  
-  .price {
+ } 
+ .price {
     background: rgb(46, 45, 45);
     font-size: 16px;
-  }
-  
-  .name{
+ }
+.name{
     padding: 10px;
     margin: 0;
     display: inline-block;
     color:rgb(255, 255, 255);
     text-transform: uppercase;
-}
-  
-  span {
+ }
+span {
     float: right;
     padding: 10px;
     background: rgb(131, 134, 131);
     color:rgb(255, 255, 255);
-    }
-  
-  .gallery-item:hover .price {
+ }
+ .gallery-item:hover .price {
     background: rgb(33, 187, 161);
-  }
-  .clearfix::after{
+ }
+ .clearfix::after{
     display:table;
     content: "";
     clear:both;
-}
-.news-list{
+ }
+ .news-list{
     display: inline-block;
-}
-.news-list{
+ }
+ .news-list{
     width: 340px;
     color: rgb(131, 134, 131);
     margin-top: 65px;
     margin-right: 25px;
     margin-bottom: 30px;
-}
-.news-list:nth-last-child(3n-2){
+ }
+ .news-list:nth-last-child(3n-2){
     margin-right:0;
-}
+ }
     
-.news {
+ .news {
     margin-bottom: 40px;
     font-size: 15px;
     line-height: 26px;
     text-align: justify;
     font-family: 'Roboto', sans-serif;   
 }
-
-h3{
+ h3{
     position: relative;
     line-height: 30px;
     padding-top: 10px;
@@ -171,9 +165,9 @@ h3{
     color: rgb(89, 90, 89);
     font-weight: 500;
     margin-bottom: 31px;
-}
+ }
 
-h3::after{
+ h3::after{
     content: '';
     position: absolute;;
     width: 136px;
@@ -181,11 +175,9 @@ h3::after{
     bottom: 0;
     left:20%;
     transform: translateX(-50%);
-    background: rgb(33, 187, 161);
-    
-}
-
-.btn{
+    background: rgb(33, 187, 161); 
+ }
+ .btn{
     background: rgb(33, 187, 161);
     width: 160px;
     height: 51px;
@@ -197,4 +189,4 @@ h3::after{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 6%;
-}
+ }

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    padding: 35px 0;
+  }
+  .header-inner{
+    width:1600px;
+    margin: 0 auto;
+    padding: 0 246px;
+  }
+  .logo,
+  .list{
+      display:inline-block
+  }
+  .list{
+      float:right;
+      list-style:none;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 8px;
+  }  
+  .clearfix::after{
+    display:table;
+    content: "";
+    clear:both;
+}
+.list-item{
+    display: inline-block;
+    margin-right: 31px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+.list-item:last-child {
+    margin-right: 0;
+  }
+.list-item:hover,
+.list-item:focus{
+    color:rgb(33, 187, 161);
+    cursor: pointer;
+}
+.list-link{
+    display: block;
+}
+.logo-link{
+    display: block;
+    text-decoration: none;
+}
+.logo-title{
+    font-size: 34px;
+    color: rgb(100, 98, 98); 
+    font-weight: 100; 
+    line-height: 34px;
+}
+ .logo-title::first-letter{
+    color:rgb(33, 187, 161);
+    font-weight: 700;
+}
+.block-wrapper{
+    background-image: url(http://wallpapers-image.ru/1920x1080/mountains/wallpapers/mountains-wallpapers-1920x1080-00016.jpg);
+    background-size: cover;
+    width:1600px;
+    height: 600px;
+    margin: 0 auto;
+}
+.slider{
+    position: relative;
+    width: 1112px;
+    height: 600px;
+    margin: 0 auto;
+}
+.content-wrapper{
+    position: absolute;
+    top:50%;
+    text-transform: uppercase;
+    color:#fff;
+    line-height: 50px;
+    padding: 0 150px;
+}
+.content-wrapper h1{
+    font-size: 50px;
+    font-weight: bold; 
+    text-align: center;
+    transform: translateY(-50%);
+}
+.content-wrapper p{
+    font-size: 25px;
+}
+
+.slider-ctrl{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 50px;
+    height: 57px;
+    background-color: rgb(17, 236, 225);
+    border:none;
+    z-index:1;
+}
+.slider-ctrl-prev{
+left: 0;
+}
+.slider-ctrl-next{
+right: 0;
+}
+.slides{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slides-item{
+    position: relative;
+}
+.slides-img{
+    height: 400px;
+    width: 100%;
+    object-fit:cover;
+}
+.slides-descr{
+position: absolute;
+bottom:0;
+right: 0;
+width: 300px;
+
+}
+
+position: absolute;
+bottom:50%;
+transform: translatex(100%);
