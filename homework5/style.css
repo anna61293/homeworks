@@ -6,28 +6,28 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+.block-wrapper,
+.collection-list,
+.footer{
+    width:100%;
+    margin: 0 auto;
+}
+.container{
+    width:1112px; 
+    margin: 0 auto;
+}
 .header {
     padding: 35px 0;
 }
-.header-inner,
-.collection-list,
-.footer{
-    width:1600px;
-    margin: 0 auto;
-}
-.header-inner{
-    padding: 0 246px;    
-}
 .logo,
 .list{
-    display:inline-block
+    display:inline-block;
 }
 .list{
     float:right;
     list-style:none;
     margin-top: 8px;
 }  
-
 .list-item{
     display: inline-block;
     margin-right: 31px;
@@ -61,11 +61,10 @@
     font-weight: 700;
 }
 .block-wrapper{
+    position: relative;
     background-image: url(img/girls.png);
     background-size: cover;
-    width:1600px;
     height: 600px;
-    margin: 0 auto;
 }
 .color-lay {
     position: absolute;
@@ -75,9 +74,24 @@
     height: 100%;
     background: rgba(0, 0, 2, 0.6);
 }
+.content-wrapper{
+    position: absolute;
+    top:50%;
+    left:300px;
+    transform: translateY(-50%);
+    color: #fff;
+    text-transform: uppercase; 
+}
+.title{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.title-descr{
+    font-size: 25px;
+    opacity: 0.6;
+}
 .btn-wrapper{
     position: relative;
-    width:1112px;
     height: 600px;
     margin: 0 auto;
 }
@@ -102,32 +116,12 @@
 .btn:hover{
     opacity: 0.5;
 }
- .icon-btn {
+.icon-btn {
     width: 40px;
     height: 80px;
     text-align: center;
     fill: #fff;
     transition: fill 0.5s ease-in-out;
-}
-.block-wrapper{
-    position: relative;
-}
-.content-wrapper{
-    position: absolute;
-    top:50%;
-    left:428px;
-    transform: translateY(-50%);
-    color: #fff;
-    text-transform: uppercase; 
-}
-
-.title{
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-.title-descr{
-    font-size: 25px;
-    opacity: 0.6;
 }
 .collection-list{
     background: rgb(221, 239, 252);
@@ -152,7 +146,6 @@ h2::after {
     background: rgb(33, 187, 161);
 }
 .gallery {
-    margin:0 245px;
     padding-bottom: 100px;
 }
 .gallery-item{
@@ -196,7 +189,7 @@ h2::after {
 .price {
     background: rgb(46, 45, 45);
     font-size: 20px;
-    height: 40px;
+    height: 42px;
     text-transform: uppercase;
 }
  .name{
@@ -209,7 +202,7 @@ h2::after {
     padding: 10px;
     background: rgb(131, 134, 131);
     color:rgb(255, 255, 255);
-    height: 40px;
+    height: 42px;
 }
  .gallery-item:hover .price {
     background: rgb(33, 187, 161);
@@ -265,12 +258,10 @@ h2::after {
     background: rgb(33, 187, 161);
     border-color:  #fff;
 }
-  
-.icons-wrapper--wide:hover {
+  .icons-wrapper--wide:hover {
     background: #323232;
     border-color:  #fff;
 }
-
 .clearfix::after {
    display: table;
    content: "";
@@ -290,4 +281,5 @@ h2::after {
 .created_by{
     color: rgb(33, 187, 161);
     font-weight: 400;
+    text-decoration: none;
 }
