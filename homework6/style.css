@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+    line-height: 30px;
+}
+.header{
+    padding: 30px 5px 130px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.list{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    list-style: none;
+}
+.logo-link,
+.list-link{
+    text-decoration: none;
+    color:rgb(61, 228, 205);
+}
+.logo-link{
+    font-weight:  bolder;
+    font-size:28px;
+}
+.list a{
+    position: relative;
+    padding-bottom: 12px;
+}
+.list a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color:#f38181;
+    transform: translateX(-50%);
+    transition:opacity 300ms linear; 
+    opacity: 0;
+  }
+.list a:hover,
+.list a:focus {
+    color: #f38181;
+    transform: scale(1.1);
+}
+.list li:hover a::after {
+   opacity: 1;
+   color: #f38181;
+  }
+.title{
+    text-align: center;
+}
+h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 200;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 28px; 
+    position: relative;
+    padding-bottom: 43px;
+    font-family: 'Prompt', sans-serif;
+}
+h2::after{
+    content:'';
+    position: absolute;
+    background-color:#f38181;
+    width: 60px;
+    height: 3px;
+    left:47%;
+    bottom: 0;
+}
+.service-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-list-item{
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-top: 65px;
+  }
+.img{
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+.text{
+    width:330px;
+    display: flex;
+    flex-direction: column;
+}
+.text p,
+.title p,
+.proffession{
+    color: rgb(129, 123, 123);
+    font-size: 14px;
+}
+h4{
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: rgb(77, 76, 76);
+}
+.title p{
+    margin: 60px 0 85px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:85px;
+}
+.team-list-img{
+    width: 380px;
+    height: 470px;
+    background-color: rgb(128, 99, 99);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    transition: 200ms linear;
+}
+.team-list-img::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgb(115, 211, 214);
+    z-index: -1;
+    transition: 200ms linear,transform 200ms linear;
+}
+.team-list-img::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 0;
+    z-index: 2;
+    transition: 200ms linear,transform 200ms linear;
+    background: linear-gradient( to top, rgba(230, 199, 90, 0.9), #f38181 );
+}
+.team-list-img:hover {
+    transform: translateX(-10px) translateY(-10px);
+}
+.team-list-img:hover::after{
+    opacity: 0.8;
+}
+.team-list-img:hover::before{
+    transform: translateX(10px) translateY(10px);
+}
+img {
+    position: relative;
+}
+.icons-wrapper{
+    position: absolute;
+    display: flex;
+    top:205px;
+    left:77px;
+    cursor: pointer;
+    z-index: 3;
+    opacity:0;
+    transition: 200ms linear;
+}
+.icon-wrapper{
+    width: 55px;
+    height: 55px;
+    background-color:rgba(252,227,138,0.9 ); 
+    margin: 0.5px;
+}
+.icon{
+    text-align: center;
+    padding-top: 10px;
+}
+.team-list-img:hover .icons-wrapper{
+    opacity: 1;
+}
+.icon-wrapper:hover{
+    background-color: rgb(115, 211, 214);
+}
+.proffession{
+    font-style: italic; 
+    text-align: center;
+}
+.team-name{
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: 100; 
+    color: rgb(63, 63, 63);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(199, 199, 199);
+    padding: 12px;  
+}
+footer p{
+    color: rgb(63, 63, 63);
+}
+footer a{
+    color: rgb(163, 56, 56);
+    text-decoration: none;
+}
+form {
+    display: flex;
+}
+input[type=email] {
+    width: 230px;
+    height: 40px;
+    font-style: italic;
+    font-weight: 300;
+    padding-left: 14px;
+    border:1px solid  rgb(199, 199, 199);
+    color: rgb(199, 199, 199);
+    opacity: 0.5;
+}
+button {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(115, 211, 214);
+    color:rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    transition: width 200ms linear;
+}
+button:hover {
+    background-color: rgba(243,129,129, 0.9);
+}
